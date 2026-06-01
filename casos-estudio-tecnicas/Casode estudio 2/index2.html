@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso de Estudio 2</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="5">Citas Clinica Dental</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Especialidades</td>
+                <td>
+                    <select id="id-select-especialidades">
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="center">
+                    <button id="id-btn-cargar-especialidades">Cargar Especialidades</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="id-btn-presentar-especialidades">Presentar</button>
+                </td>
+                <td colspan="7">
+                    <textarea name="" id="id-listado-especialidades" rows="5"  style="width: 100%;"  readonly >
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td> Especialidades superiores al promedio: </td>
+                    <td>
+                        <input type="num" id="num-especialidades-superiores-promedio">
+                    </td>
+                </td>
+                <td>
+                    <button id="btn-especialidades-superiores-promedio"> Calcular</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Especialidades con demanda crítica: </td>
+                    <td>
+                        <input type="num" id="num-especialidades-demanda-criticas">
+                    </td>
+                </td>
+                <td>
+                    <button id="btn-especialidades-demanda-criticas"> Calcular</button>
+                </td>
+            </tr>
+              <tr>
+                <td> Porcentaje de cada especialidad respecto al total: </td>
+                    <td>
+                         <textarea name="" id="txt-porcentaje-especialidades" rows="3" readonly>
+                    </textarea>
+                    </td>
+                </td>
+                <td>
+                    <button id="btn-porcentaje-especialidades"> Calcular</button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+    <script type="module" src="../Casode estudio 2/js/app-caso2.js"></script>
+</body>
+</html>

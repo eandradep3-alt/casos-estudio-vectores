@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso de Estudio 1</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="5">Ventas abarrotes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Categorias Articulos</td>
+                <td>
+                    <select id="id-select-categorias">
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="center">
+                    <button id="id-btn-cargar-articulos">Cargar articulos</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="id-btn-presentar-categorias">Presentar</button>
+                </td>
+                <td colspan="7">
+                    <textarea name="" id="id-listado-categorias" rows="5"  style="width: 100%;"  readonly >
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td> Categorías superiores al promedio: </td>
+                    <td>
+                        <input type="num" id="num-categorias-superiores-promedio">
+                    </td>
+                </td>
+                <td>
+                    <button id="btn-categorias-superiores-promedio"> Calcular</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Categorías con ventas críticas: </td>
+                    <td>
+                        <input type="num" id="num-ventas-criticas">
+                    </td>
+                </td>
+                <td>
+                    <button id="btn-ventas-criticas"> Calcular</button>
+                </td>
+            </tr>
+              <tr>
+                <td> Porcentaje de cada categoría respecto al total: </td>
+                    <td>
+                         <textarea name="" id="txt-porcentaje-categoria" rows="3" readonly>
+                    </textarea>
+                    </td>
+                </td>
+                <td>
+                    <button id="btn-porcentaje-categoria"> Calcular</button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+    <script type="module" src="./js/app-caso1.js"></script>
+</body>
+</html>
+
